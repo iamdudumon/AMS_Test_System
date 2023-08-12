@@ -20,6 +20,7 @@ exports.checkEmailExistence = async (req, res) => {
     });
 };
 
+// 회원가입 컨트롤러 (근로자)
 exports.createWorker = async (req, res) => {
   const data = req.body;
   const hashedPassword = bcrypt.hashSync(data.password, 10);
@@ -45,6 +46,7 @@ exports.createWorker = async (req, res) => {
   }
 };
 
+// 로그인 컨트롤러
 exports.loginUser = async (req, res) => {
   const email = req.body.email;
   const password = req.body.password;
