@@ -7,7 +7,7 @@ router.get("/emailCheck/:email", userController.checkEmailExistence);
 
 router.post("/signup/worker", userController.createWorker);
 
-// router.post("/signup/manager", function (req, res, next) {});
+router.post("/signup/manager", userController.createManager);
 
 router.post("/login", userController.loginUser);
 

@@ -34,8 +34,8 @@ Worker.init(
     work_place: { type: sequelize.DataTypes.STRING, allowNull: false },
     place_latitude: { type: sequelize.DataTypes.FLOAT, allowNull: true },
     place_longitude: { type: sequelize.DataTypes.FLOAT, allowNull: true },
-    current_latitude: { type: sequelize.DataTypes.FLOAT, allowNull: true },
-    current_longitude: { type: sequelize.DataTypes.FLOAT, allowNull: true },
+    latitude: { type: sequelize.DataTypes.FLOAT, allowNull: true },
+    longitude: { type: sequelize.DataTypes.FLOAT, allowNull: true },
     approved: { type: sequelize.DataTypes.BOOLEAN, defaultValue: false },
   },
   {
